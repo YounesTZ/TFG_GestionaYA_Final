@@ -1,0 +1,32 @@
+<img id="fotoProducto" src="{{producto?.fotoUrl}}" alt="{{producto?.nombre}}">
+<section class="margen-chico">
+  <ul>
+    <span>Información: </span>
+    <p>{{producto?.informacion}}</p>
+  </ul>
+
+  <ul>
+    <span>Se necesita: </span>
+    <p>{{producto?.seNecesita}}</p>
+  </ul>
+
+  <div>
+    <div class="apto-container" *ngIf="producto?.esPresencial">
+      <img class="apto" src="./../../../assets/iconos/presencial.png" alt="Servicio presencial">
+      <p>Servicio presencial</p>
+    </div>
+    <div class="apto-container" *ngIf="producto?.esOnline">
+      <img class="apto" src="./../../../assets/iconos/online.png" alt="Servicio online">
+      <p>Servicio online</p>
+    </div>
+  </div>
+  
+  <label for="notas">Notas:</label>
+  <textarea name="notas" id="notas" cols="30" rows="3" [(ngModel)]="notas" 
+  placeholder="Introduzca aquí la información necesaria para llevar a cabo el servicio..."></textarea>
+
+  
+  <button (click)="agregarAlCarrito()">Agregar al carrito</button>
+</section>
+
+

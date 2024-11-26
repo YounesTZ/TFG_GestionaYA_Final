@@ -1,0 +1,75 @@
+<ng-container *ngIf="cartService.carrito.length !== 0, else sinCarrito">
+  <section>
+<div id="tarjetas-container" class="margen-chico">
+  <div *ngFor="let producto of cartService.carrito; index as i" class="tarjeta-producto-container">
+    <ng-container *ngIf="productosCarrito[i]">
+      <div id="izq" [ngStyle]="{'background-image': 'url('+productosCarrito[i].fotoUrl+')'}">
+        <div>
+          <img *ngIf="productosCarrito[i].esPresencial" src="./../../../assets/iconos/presencial.png" alt="Servicio presencial">
+          <img *ngIf="productosCarrito[i].esOnline" src="./../../../assets/iconos/online.png" alt="Servicio online">
+        </div>
+      </div>
+      <div id="centro">
+        <p class="negrita">{{productosCarrito[i].nombre}} </p>
+        <p *ngIf="producto.notas !== ''">{{producto.notas}}</p>
+      </div>
+      <div id="der">
+        <!-- Modificación: Pasar idCarrito al método eliminarProducto -->
+        <button id="borrar" (click)="eliminarProducto(producto.idCarrito)">
+          <img src="./../../../assets/iconos/papelera.png" alt="">
+        </button>
+        <p class="negrita">€{{productosCarrito[i].precio}}</p>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="flex-center">
+  <a id="mas" [routerLink]="['/home']" routerLinkActive="router-link-active">+</a>
+</div>
+</section>
+
+<section class="margen-chico" id="informacion">
+  <h3>Datos cliente</h3>
+  <div class="flex-apart" id="envios-container">
+    <div>
+      <ng-container *ngIf="perfilService.perfil(), else sinDatosEnvio">
+        <h4>{{perfilService.perfil()!.nombre}}</h4>
+        <p>{{perfilService.perfil()!.correo}}</p> 
+        <p>{{perfilService.perfil()?.telefono}}</p>
+        <p>{{perfilService.perfil()!.documentacion}}</p>
+      </ng-container>
+      <ng-template #sinDatosEnvio>
+        <p>Ingresá tus datos de envío</p>
+      </ng-template>
+    </div>
+    <div>
+      <a [routerLink]="['/perfil']" routerLinkActive="router-link-active" >
+        <img src="./../../../assets/iconos/lapiz.png" alt="Editar">
+      </a>
+    </div>
+  </div>
+
+  <div id="totales" class="flex-apart">
+    <div>
+      <p class="negrita">Total</p>
+    </div>
+    <div id="montos">
+      <p class="negrita">€{{total}}</p>
+    </div>
+  </div>
+  <button id="enviar" (click)="enviarMensaje()">Realizar Pedido</button>
+</section>
+</ng-container>
+<ng-template #sinCarrito>
+  <h2>Tu carrito está vacío</h2>
+</ng-template>
+
+<dialog method="modal" #dialog>
+  <p>¿Pudiste realizar el pedido?</p>
+  <div>
+    <button (click)="finalizarPedido()"><span>Sí</span><span>Reiniciar pedido</span></button>
+    <button (click)="editarPedido()"><span>No</span><span>Editar pedido</span></button>
+  </div>
+</dialog>
+

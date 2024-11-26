@@ -1,0 +1,108 @@
+@use "./../../../assets/styles/variables.scss";
+
+* {
+  font-size: large;
+}
+
+form, form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+form {
+  gap: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+form div {
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+input {
+  height: 20px;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50; /* Color predeterminado */
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.cerrar-sesion-btn {
+  background-color: #f44336; /* Color original de Cerrar Sesión */
+}
+
+.borrar-usuario-btn {
+  background-color: #f44336; /* Rojo */
+  color: white;
+  padding: 10px;
+  margin-top: 0px; /* Añadir margen para mantener el espacio */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Asegura que tenga el mismo tamaño que los demás botones */
+}
+
+.confirm-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(231, 173, 173);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los contenidos en el eje horizontal */
+  justify-content: center;
+}
+
+.confirm-dialog p {
+  margin-bottom: 20px;
+  text-align: center; /* Asegura que el texto del mensaje esté centrado */
+}
+
+.confirm-dialog .button-container {
+  display: flex; /* Hace que los botones estén en fila */
+  justify-content: center; /* Centra los botones en el contenedor */
+  gap: 20px; /* Espacio entre los botones */
+  width: 100%;
+}
+
+.confirm-dialog button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px; /* Asegura que los botones tengan el mismo tamaño */
+  text-align: center;
+}
+
+.confirm-dialog button:last-child {
+  background-color: #4CAF50; /* El botón de "Sí" tendrá un color diferente */
+}
+
+
+

@@ -1,0 +1,27 @@
+<section>
+  <form #loginForm="ngForm" class="margen-chico" (ngSubmit)="iniciarSesion()">
+    <div>
+      <label for="nombreCorreo">Correo</label>
+      <input type="text" name="nombreCorreo" id="nombreCorreo" [(ngModel)]="perfil.correo" #nombreCorreo="ngModel"
+        required minlength="4">
+      <p class="error" *ngIf="nombreCorreo.invalid && nombreCorreo.touched">Ingrese un correo válido</p>
+    </div>
+    <div>
+      <label for="contrasena">Contraseña</label>
+      <input type="password" name="contrasena" id="contrasena" [(ngModel)]="perfil.password" #contrasena="ngModel"
+        required minlength="6">
+      <p class="error" *ngIf="contrasena.invalid && contrasena.touched">Ingrese una contraseña válida</p>
+    </div>
+    <button [disabled]="loginForm.invalid">Iniciar Sesión</button>
+    <!-- Botón para redirigir al registro -->
+    <button type="button" (click)="irARegistro()">Crear nuevo usuario</button>
+  </form>
+</section>
+
+<!-- Diálogo Modal -->
+<div *ngIf="showDialog" class="dialog-overlay">
+  <div class="dialog-box">
+    <p>Credenciales inválidas</p>
+    <button (click)="cerrarDialogo()">OK</button>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div id="container">
+    <div id="foto" [ngStyle]="{'background-image': 'url(' + producto.fotoUrl + ')'}">
+        <img *ngIf="producto.esOnline" src="./../../../../assets/iconos/online.png" alt="Servicio Online">
+        <img *ngIf="producto.esPresencial" src="./../../../../assets/iconos/presencial.png" alt="Servicio Presencial">
+    </div>
+    <div id="detalles">
+        <h4>{{producto.nombre}}</h4>
+        <p>{{producto.informacion}}</p> <!-- Cambio aquí: solo mostrar información directamente -->
+        <p id="precio">€{{producto.precio}}</p>
+    </div>
+</div>
+

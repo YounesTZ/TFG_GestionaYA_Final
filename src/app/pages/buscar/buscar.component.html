@@ -1,0 +1,31 @@
+<section>
+<form #buscarForm="ngForm" (change)="buscar()"productos>
+    <div id="barra-busqueda">
+      <img src="./../../../assets/iconos/lupa.svg" alt="Lupa">
+      <input type="text" name="texto" [(ngModel)]="parametrosBusqueda.texto" #texto="ngModel">
+    </div>
+    <div id="filtros-container">
+      <div class="apto-container">
+        <img src="./../../../assets/iconos/presencial.png" alt="Servicio presencial">
+        <input type="checkbox" name="presencial" id="presencial" [(ngModel)]="parametrosBusqueda.servicioPresencial" #presencial="ngModel">
+        <span>Servicio presencial</span>
+      </div>
+      <div class="apto-container">
+        <img src="./../../../assets/iconos/online.png" alt="Servicio Online">
+        <input type="checkbox" name="online" id="online" [(ngModel)]="parametrosBusqueda.servicioOnline" #online="ngModel">
+      <span>Servicio Online</span>
+    </div>
+  </div>
+  </form>
+  <div id="contenedor-productos" *ngIf="productos().length !== 0; else sinResultado">
+    <app-tarjeta-producto
+    *ngFor="let producto of productos()"
+    [producto]="producto"
+    [routerLink]="['/articulo',producto.id]"
+    >
+  </app-tarjeta-producto>
+  </div>
+  <ng-template #sinResultado>
+    <h2>Tu búsqueda no encontró ningun resultado</h2>
+  </ng-template>
+</section>

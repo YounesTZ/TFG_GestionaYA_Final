@@ -1,0 +1,281 @@
+[
+    {
+      "id": 1,
+      "nombre": "Envíos de dinero",
+      "fotoUrl": "https://st2.depositphotos.com/1799455/7612/i/450/depositphotos_76127411-stock-photo-hand-throwing-a-dollar-paper.jpg",
+      "productos": [
+        {
+            "id": "11",
+            "nombre":"Envío de dinero 50€",
+            "precio": 50,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Envíos de dinero nacional o internacional, Serán 50€ con comisión(2,90€) incluida",
+            "seNecesita": "Documentación(DNI, NIE o Pasaporte), pais y ciudad a donde se quiere hacer el envío, nombre y apellidos de la persona que recibe",
+            "fotoUrl": "https://envios.es/img/enviar-dinero/recogida-de-dinero-en-efectivo.jpg"
+          },
+          {
+            "id": "12",
+            "nombre":"Envío de dinero 100€",
+            "precio": 100,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Envíos de dinero nacional o internacional, Serán 100€ con comisión(3,90€) incluida",
+            "seNecesita": "Documentación(DNI, NIE o Pasaporte), pais y ciudad a donde se quiere hacer el envío, nombre y apellidos de la persona que recibe",
+            "fotoUrl": "https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2015/08/05/150805124853_billetes_portada_dentro_624x351_thinstock.jpg.webp"
+          },
+          {
+            "id": "13",
+            "nombre":"Envío de dinero 150€",
+            "precio": 150,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Envíos de dinero nacional o internacional, Serán 150€ con comisión(4,90€) incluida",
+            "seNecesita": "Documentación(DNI, NIE o Pasaporte), pais y ciudad a donde se quiere hacer el envío, nombre y apellidos de la persona que recibe",
+            "fotoUrl": "https://p4.wallpaperbetter.com/wallpaper/179/636/946/money-euro-banknotes-coins-wallpaper-preview.jpg"
+          },
+          {
+            "id": "14",
+            "nombre":"Envío de dinero 200€",
+            "precio": 200,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Envíos de dinero nacional o internacional, Serán 200€ con comisión(6,90€) incluida",
+            "seNecesita": "Documentación(DNI, NIE o Pasaporte), pais y ciudad a donde se quiere hacer el envío, nombre y apellidos de la persona que recibe",
+            "fotoUrl": "https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2015/08/05/150805124853_billetes_portada_dentro_624x351_thinstock.jpg.webp"
+          },
+          {
+            "id": "15",
+            "nombre":"Envío de dinero 250€",
+            "precio": 250,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Envíos de dinero nacional o internacional, Serán 250€ con comisión(8,20€) incluida",
+            "seNecesita": "Documentación(DNI, NIE o Pasaporte), pais y ciudad a donde se quiere hacer el envío, nombre y apellidos de la persona que recibe",
+            "fotoUrl": "https://envios.es/img/enviar-dinero/recogida-de-dinero-en-efectivo.jpg"
+          },
+          {
+            "id": "16",
+            "nombre":"Envío de dinero 500€",
+            "precio": 500,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Envíos de dinero nacional o internacional, Serán 500€ con comisión(11€) incluida",
+            "seNecesita": "Documentación(DNI, NIE o Pasaporte), pais y ciudad a donde se quiere hacer el envío, nombre y apellidos de la persona que recibe",
+            "fotoUrl": "https://p4.wallpaperbetter.com/wallpaper/179/636/946/money-euro-banknotes-coins-wallpaper-preview.jpg"
+          }         
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Recargas",
+      "fotoUrl": "https://unasonrisaunailusion.org/wp-content/uploads/2021/08/capturada-panel-recargas.jpg",
+      "productos": [
+        {
+          "id": "21",
+          "nombre":"Recarga de saldo 5€",
+          "precio": 5,
+          "esPresencial":true,
+          "esOnline":true,
+          "informacion": "Tarjeta prepago, te permitirá usar el servicio de la red de telecomunicaciones hasta que se acabe el saldo",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://comparaiso.es/sites/comparaiso.es/files/recargar-tarjeta-sim-825x293.png"
+        },
+        {
+          "id": "22",
+          "nombre":"Bono 5€",
+          "precio": 5,
+          "esPresencial":true,
+          "esOnline":true,
+          "informacion": "8GB acumulables + 100 minutos nacionales e internacionales",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://i.blogs.es/0471e3/fallo-datos-moviles-iphone/1366_2000.jpeg"
+        },
+        {
+          "id": "23",
+          "nombre":"Recarga de saldo 10€",
+          "precio": 10,
+          "esPresencial":true,
+          "esOnline":true,
+          "informacion": "Tarjeta prepago, te permitirá usar el servicio de la red de telecomunicaciones hasta que se acabe el saldo",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://comparaiso.es/sites/comparaiso.es/files/recargar-tarjeta-sim-825x293.png"
+        },
+        {
+          "id": "24",
+          "nombre":"Bono 10€",
+          "precio": 10,
+          "esPresencial":true,
+          "esOnline":true,
+          "informacion": "30GB acumulables + 400 minutos nacionales e internacionales",
+          "fotoUrl": "https://i.blogs.es/0471e3/fallo-datos-moviles-iphone/1366_2000.jpeg"
+        },
+        {
+          "id": "25",
+          "nombre":"Recarga de saldo 15€",
+          "precio": 15,
+          "esPresencial":true,
+          "esOnline":true,
+          "informacion": "Tarjeta prepago, te permitirá usar el servicio de la red de telecomunicaciones hasta que se acabe el saldo",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://comparaiso.es/sites/comparaiso.es/files/recargar-tarjeta-sim-825x293.png"
+        },
+        {
+          "id": "26",
+          "nombre":"Bono 15€",
+          "precio": 15,
+          "esPresencial":true,
+          "esOnline":true,
+          "informacion": "100GB acumulables + 800 minutos nacionales e internacionales",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://i.blogs.es/0471e3/fallo-datos-moviles-iphone/1366_2000.jpeg"
+        },
+        {
+          "id": "27",
+          "nombre":"Recarga de saldo 20€",
+          "precio": 20,
+          "esPresencial":true,
+          "esOnline":true,
+          "informacion": "Tarjeta prepago, te permitirá usar el servicio de la red de telecomunicaciones hasta que se acabe el saldo",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://comparaiso.es/sites/comparaiso.es/files/recargar-tarjeta-sim-825x293.png"
+        },
+        {
+          "id": "28",
+          "nombre":"Bono 20€",
+          "precio": 20,
+          "esPresencial":true,
+          "esOnline":true,
+          "informacion": "200GB acumulables + 2000 minutos nacionales e internacionales",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://i.blogs.es/0471e3/fallo-datos-moviles-iphone/1366_2000.jpeg"
+        },
+        {
+          "id": "23",
+          "nombre":"Nueva Tarjeta Prepago",
+          "precio": 5,
+          "esPresencial":true,
+          "esOnline":false,
+          "informacion": "Venta de nueva tarjeta física prepago al cliente",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y documentación (NIE, DNI o Pasaporte)",
+          "fotoUrl": "https://wise.com/imaginary-v2/1d44fb17f9c5b9e399fa5d0244cd3f9c.jpg?width=1200"
+        },
+        {
+          "id": "24",
+          "nombre":"Duplicado de Tarjeta",
+          "precio": 5,
+          "esPresencial":true,
+          "esOnline":false,
+          "informacion": "Duplicado de sim card, la sim nueva tiene un tiempo de activación",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://www.adslzone.net/app/uploads-adslzone.net/2022/05/duplicado-SIM.jpg"
+        },
+        {
+          "id": "25",
+          "nombre":"Otros",
+          "precio": 0,
+          "esPresencial":true,
+          "esOnline":false,
+          "informacion": "Otras gestiones relacionados con tarjetas prepago",
+          "seNecesita": "Nombre de la operadora de red móvil(DIGI,Orange,LlamaYa,Lyca,Vodafone,...) y número de teléfono",
+          "fotoUrl": "https://www.ocu.org/-/media/ocu/images/home/tecnologia/telefono/sim-swapping-timo-duplicado-sim.jpg?rev=4e0351e1-7546-4ab9-adf5-89ff4a962e8a&hash=CF8CF0A5B3A0A067B22D5DC4FFA1A825"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Citas",
+      "fotoUrl": "https://cdn.andro4all.com/andro4all/2015/09/portada1.jpg",
+      "productos": [
+        {
+            "id": "31",
+            "nombre":"Cita Ayuntamiento",
+            "precio": 2,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Cita para el ayuntamiento de tu pueblo/ciudad (empadronamiento, etc...)",
+            "seNecesita": "Nombre de pueblo o ciudad donde quieres recibir la cita, documentación(DNI, NIE o Pasaporte) y número de teléfono",
+            "fotoUrl": "https://aytosagunto.es/media/owalm0ev/img-cita-previa-interior.jpg?width=453&height=302&mode=max"
+          },
+          {
+            "id": "32",
+            "nombre":"Cita Hacienda",
+            "precio": 2,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Cita para Hacienda (la más cerca de tu geolocalización)",
+            "seNecesita": "Nombre de pueblo o ciudad donde quieres recibir la cita, documentación(DNI, NIE o Pasaporte) y número de teléfono",
+            "fotoUrl": "https://i.blogs.es/64ca85/irpf/450_1000.webp"
+          },
+          {
+            "id": "33",
+            "nombre":"Cita ITV",
+            "precio": 2,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Cita para para inspección técnica de vehículos",
+            "seNecesita": "Nombre de pueblo o ciudad donde quieres recibir la cita, documentación(DNI, NIE o Pasaporte) del solicitante documentacion del vehiculo(matricula, nº de bastidor, etc) y número de teléfono",
+            "fotoUrl": "https://cdn.pagatelia.com/images/portal/1270/cambios-en-la-nueva-itv.jpg"
+          },
+          {
+            "id": "34",
+            "nombre":"Otras Citas",
+            "precio": 0,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Otro tipo de citas previas",
+            "seNecesita": "Tipo de cita, nombre de pueblo o ciudad donde quieres recibir la cita, documentación(DNI, NIE o Pasaporte) y número de teléfono",
+            "fotoUrl": "https://static.vecteezy.com/system/resources/thumbnails/002/050/653/small_2x/calendar-and-pencil-on-blue-background-photo.jpg"
+          }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Otros",
+      "fotoUrl": "https://portalcoruna.com/wp-content/uploads/2024/04/Locutorio-Telefonico-4-Caminos-en-A-Coruna-960x720.jpg",
+      "productos": [
+        {
+            "id": "41",
+            "nombre":"Cyber",
+            "precio": 0,
+            "esPresencial":true,
+            "esOnline":false,
+            "informacion": "Se ofrecen ordenadores para el uso del público para ocio o para llevar a acabo gestiones",
+            "seNecesita": "Acudir de forma presencial al local",
+            "fotoUrl": "https://208f1686.rocketcdn.me/wp-content/uploads/2018/04/cyber-cafe-in-nigeria-640x360.jpg"
+          },
+          {
+            "id": "42",
+            "nombre":"Llamadas telefónicas",
+            "precio": 0,
+            "esPresencial":true,
+            "esOnline":false,
+            "informacion": "Disponibilidad de cabinas telefónicas para llevar a cabo llamada nacionales e internacionales",
+            "seNecesita": "Acudir de forma presencial al local",
+            "fotoUrl": "https://www.fonoglobal.com.ar/images_sites/cabinas.jpg"
+          },
+          {
+            "id": "43",
+            "nombre":"CV desde 0",
+            "precio": 10,
+            "esPresencial":true,
+            "esOnline":true,
+            "informacion": "Se ofrece servicio para realizar curriculums Vitae desde 0 a partir de datos personales y experiencia laboral",
+            "seNecesita": "Documentación(DNI, NIE o Pasaporte), número de teléfono, experiencia laboral, idiomas, permisos o diplomas, aptitudes, etc...",
+            "fotoUrl": "https://st2.depositphotos.com/3732989/5675/i/450/depositphotos_56750083-stock-photo-curriculum-vitae.jpg"
+          },
+          {
+            "id": "44",
+            "nombre":"Comida y Bebida",
+            "precio": 0,
+            "esPresencial":true,
+            "esOnline":false,
+            "informacion": "El local dispone de neveras con bebida y comida para picar",
+            "seNecesita": "Acudir de forma presencial al local",
+            "fotoUrl": "https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/2ec839bb-3ac9-473b-950c-c4785eab5162?rule=hw396_70"
+          }
+      ]
+    }
+  ]
+  
+  

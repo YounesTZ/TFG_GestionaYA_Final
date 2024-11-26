@@ -1,0 +1,117 @@
+@use "./../../../assets/styles/variables.scss";
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; // Ocupa toda la pantalla
+  position: relative;
+  z-index: 1;
+
+  // Pseudo-elemento para la imagen de fondo con opacidad
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./../../../assets/img/locutorio.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; // Solo la imagen tiene opacidad
+    z-index: -1; // Asegura que esté detrás del contenido
+  }
+
+  form {
+    background-color: rgba(255, 255, 255, 0.5); // Fondo blanco semi-transparente para el formulario
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px; // Ancho fijo para el formulario
+
+    div {
+      margin-right: 25px;
+      margin-bottom: 15px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.7); // Color del texto
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+
+        &:focus {
+          outline: none;
+          border-color: variables.$color-principal; // Color de borde al enfocar
+        }
+      }
+
+      .error {
+        color: red;
+        font-size: 12px;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 40px;
+      background-color: rgba(28, 0, 94, 0.7); // Color del botón
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 5px 5px 15px rgb(0, 0, 0); // Contorno negro para el botón
+
+      &:hover {
+        background-color: darken(variables.$color-principal, 10%); // Color más oscuro al pasar el ratón
+      }
+
+      &:disabled {
+        background-color: rgba(60, 27, 90, 0.8); // Color del botón deshabilitado
+        cursor: not-allowed; // Cambia el cursor al pasar sobre un botón deshabilitado
+      }
+    }
+  }
+
+  // Overlay para el modal
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; // Inicialmente oculto
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; // Asegura que se muestre sobre otros elementos
+  }
+  
+  .dialog-overlay.show {
+    display: flex; // Muestra el modal cuando la clase 'show' está activa
+  }
+  
+  .dialog-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+}

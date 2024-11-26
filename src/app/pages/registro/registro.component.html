@@ -1,0 +1,42 @@
+<section>
+  <form #registroForm="ngForm" class="margen-chico" (ngSubmit)="registrarse()">    
+    <div>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" [(ngModel)]="perfil.nombre" #nombre="ngModel" required minlength="2">
+      <p class="error" *ngIf="nombre.invalid && nombre.touched">Ingrese un nombre válido</p>
+    </div>
+
+    <div>
+      <label for="apellidos">Apellidos</label>
+      <input type="text" name="apellidos" id="apellidos" [(ngModel)]="perfil.apellidos" #apellidos="ngModel" required minlength="2">
+      <p class="error" *ngIf="apellidos.invalid && apellidos.touched">Ingrese apellidos válidos</p>
+    </div>
+
+    <div>
+      <label for="correo">Correo</label>
+      <input type="email" name="correo" id="correo" [(ngModel)]="perfil.correo" #correo="ngModel" required>
+      <p class="error" *ngIf="correo.invalid && correo.touched">Ingrese un correo válido</p>
+
+      <!-- Mensaje de error debajo del correo -->
+      <p *ngIf="showErrorDialog" class="error">El correo ya está en uso. Por favor, ingresa otro correo.</p>
+    </div>
+
+    <div>
+      <label for="doc">DNI/NIE</label>
+      <input type="text" name="doc" id="doc" [(ngModel)]="perfil.documentacion" #doc="ngModel">
+    </div>
+
+    <div>
+      <label for="telefono">Teléfono</label>
+      <input type="text" name="telefono" id="telefono" [(ngModel)]="perfil.telefono" #telefono="ngModel">
+    </div>
+
+    <div>
+      <label for="password">Contraseña</label>
+      <input type="password" name="password" id="password" [(ngModel)]="perfil.password" #password="ngModel" required minlength="6">
+      <p class="error" *ngIf="password.invalid && password.touched">Ingrese una contraseña válida</p>
+    </div>
+
+    <button [disabled]="registroForm.invalid">Registrarse</button>
+  </form>
+</section>

@@ -1,0 +1,14 @@
+/* El contenedor de productos con scroll */
+#contenedor-productos-scroll {
+    margin: 20px;
+    max-height: calc(100vh - 200px); /* Ajusta el 200px según el tamaño de tu header y footer */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre productos */
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+

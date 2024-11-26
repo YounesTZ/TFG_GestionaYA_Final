@@ -1,0 +1,12 @@
+<!-- Se muestra el header solo si mostrarHeaderAndTabs es true -->
+<div *ngIf="mostrarHeaderAndTabs">
+    <app-header></app-header>
+  </div>
+  
+  <!-- El router-outlet siempre se mostrará -->
+  <router-outlet></router-outlet>
+  
+  <!-- Se muestran las tabs solo si mostrarHeaderAndTabs es true -->
+  <div *ngIf="mostrarHeaderAndTabs">
+    <app-tabs></app-tabs>
+  </div>

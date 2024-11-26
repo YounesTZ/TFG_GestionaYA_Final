@@ -1,0 +1,168 @@
+@use "./../../../assets/styles/variables.scss";
+
+h2{
+  margin-top: 50px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+
+#tarjetas-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+  max-height: calc(100vh - 500px); /* Ajusta según el tamaño de tu header y footer */
+  overflow-y: auto;
+  display: flex;
+}
+
+.tarjeta-producto-container{
+  position: relative;
+  display: flex;
+  height: 80px;
+  background-color: variables.$color-principal-claro;
+  > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+
+#izq{
+  width: 35%;
+  background-color: bisque;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  > div{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    img{
+      height: 20px;
+      background-color: variables.$color-sello-articulo;
+      border-radius: 50%;
+    }
+  }
+}
+
+#centro{
+  width: 55%;
+}
+
+#der{
+  width: 10%;
+  align-items: flex-end;
+}
+
+#borrar{
+  width: 24px;  // Ajusta el tamaño según lo que necesites
+  height: 24px;
+  display: inline-block;
+  background-image: url('./../../../assets/iconos/papelera.png');  // Asegúrate de que la ruta sea correcta
+  background-size: contain;  // La imagen se ajusta al contenedor sin distorsionarse
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mas{
+  font-size: xx-large;
+  text-decoration: none;
+  color: black;
+  background-color: variables.$color-principal-claro;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+#informacion{
+  font-size: larger;
+}
+
+#datoscliente{
+  font-size: larger;
+  padding-left: 10px;
+}
+
+#envios-container{
+  background-color: variables.$color-principal-claro;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-right: 10px;
+  h4{
+    font-size: larger;
+  }
+  img{
+    height: 30px;
+      background-color: variables.$color-sello-articulo;
+      border-radius: 20%;
+      margin-left: 0px;
+      display: block;
+      padding: 5px;
+  }
+}
+
+#montos{
+  text-align: end;
+  padding-right: 10px;
+}
+
+#totales > div {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+#enviar{
+  display: block;
+  width: 97%;
+  margin-top: 20px;
+  font-size: larger;
+  background-color: variables.$color-principal;
+  border: unset;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+dialog{
+  background-color: rgb(216, 207, 238);
+  border-radius: 10px;
+  border: unset;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.156);
+  div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  button{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    &:first-of-type{
+      background-color: rgb(211, 255, 211);
+    }
+    &:last-of-type{
+      background-color: rgb(255, 211, 211);
+    }
+    span:first-child{
+      font-size: x-large;
+    }
+  }
+  p{
+    font-size: x-large;
+    text-align: center;
+  }
+}
+
+
+
